@@ -1,0 +1,35 @@
+@media screen and (max-width: 1290px) {
+    .img {
+        padding: 20px 30px;
+    }
+    .row-bandeiras {
+        gap: 1rem;
+    }
+    .background {
+        margin: 5px 90px;
+    }
+    .logo {
+        width: 190px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .img {
+        padding: 20px 30px;
+    }
+    .row-bandeiras {
+        gap: 1rem;
+    }
+    .background {
+        margin: 0;
+    }
+    .logo {
+        width: 190px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
