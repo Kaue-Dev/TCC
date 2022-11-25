@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Courgette&family=Cousine&family=Josefin+Slab:ital,wght@1,300&family=Outfit:wght@500;600&family=Share+Tech&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+:root {
+    --white: #EDEEF7;
+    --dark-cyan: #124D47;
+    --cyan: #319DA0;
+    --orange: #FF5F00;
+}
+
+body {
+    user-select: none;
+    font-family: 'Josefin Slab', serif;
+    color: var(--white);
+    margin-left: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    margin-left: 28%;
+}
+
+nav {
+    background: rgba(12, 11, 11, 0.56);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(12, 11, 11, 0.3);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    padding: 25px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+nav:hover {
+    background: #000;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+header nav .icon {
+    color: var(--white);
+    height: 30px;
+    width: 30px;
+}
+
+.background {
+    background: rgba(12, 11, 11, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid rgba(12, 11, 11, 0.3);
+    margin: 0px 25%;
+    padding-bottom: 27rem;
+}
+
+@media screen and (max-width: 1220px) {
+    .background {
+        padding-bottom: 30rem;
+    }
+}
+
+h1 {
+    font-family: 'Comfortaa', sans-serif;
+    font-style: italic;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.ingredientes, .modo-preparo {
+    padding-top: 20px
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 450px;
+    border-radius: 16px;
+}
+
+summary {
+    text-align: center;
+}
+
+.ingredientes, .modo-preparo {
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px;
+    background: none;
+    font-weight: bold;
+    color: var(--white);
+    width: 180px;
+    height: 40px;
+    transition: 0.7s;
+    border: solid 2px var(--white);
+    border-radius: 24px;
+    width: 180px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.ingredientes:hover, .modo-preparo:hover {
+    border: none;
+    background-color: var(--orange);
+    font-size: 18px;
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.botoes {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+details .lista-ingredientes, .passo-a-passo {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    background: #191919;
+    border: solid 1px var(--white);
+    padding: 10px 60px;
+    margin-top: 30px;
+    border-radius: 20px;
+    position: absolute;
+    cursor: default;
+    max-height: 100%;
+}
+
+.lista-ingredientes {
+    max-width: 100vh;
+}
+
+.passo-a-passo {
+    min-width: 400px;
+    max-width: 500px;
+}
+
+li {
+    padding: 10px 0;
+}
+
+.ultima-receita {
+    padding-bottom: 40px;
+}
+
+.animacao {
+    visibility: hidden;
+}
